@@ -18,22 +18,3 @@ http://puremourning.github.io/vimspector-web
 
 https://github.com/907th/vim-auto-save
 
-Since the compilation succeeds with cmake-make, it is possible to ask CMake to generate the compilation database (typically a compile_commands.json file) with cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1.
-
-
-
-
-
-
-
-
-
-
-
-Send a message to vim
-
-
-
-
-
-
