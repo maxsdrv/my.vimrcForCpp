@@ -25,6 +25,15 @@ Plug 'jiangmiao/auto-pairs'
 "AutoSave
 Plug '907th/vim-auto-save'
 
+"Vim easy-motion
+Plug 'easymotion/vim-easymotion'
+
+"Vim multiple-cursor 
+Plug 'terryma/vim-multiple-cursors'
+
+"Vim figutive
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 
@@ -61,13 +70,13 @@ set background=dark
 
 "mappings
 " build tags of your own project with Ctrl-F12
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-F11> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 
 inoremap jj <Esc>
 "Configure mapping for NERDTree plug
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-m> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
@@ -302,9 +311,5 @@ if (empty($TMUX))
   endif
 endif
 
-
-
-
-
-
-
+"mapping for EasyMotion
+let mapleader=" " "map leader to Space
